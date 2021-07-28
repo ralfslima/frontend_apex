@@ -7,22 +7,19 @@
 
     <script>
         
-        // Obter cidade
-        var cidade = parseInt(prompt("1)Blumenau \n2)Florianópolis \n3)Joinville \n4)Pomerde \n5)Brusque"));
+        // Obter o tipo de temperatura
+        var temperatura = prompt("1) Fahrenheit para Celsius \n2) Celsius para Fahrenheit")
+
+        // Obter o valor
+        var valor = prompt("Informe o valor")
 
         // Condicional
-        if(cidade == 1){
-            document.write("Blumenau é a cidade da Oktoberfest.");
-        }else if(cidade == 2){
-            document.write("Florianópolis é a capital de Santa Catarina.");
-        }else if(cidade == 3){
-            document.write("Joinville é a maior cidade do estado.");
-        }else if(cidade == 4){
-            document.write("Cidade mais alemã do Brasil.");
-        }else if(cidade == 5){
-            document.write("Cidade da Fenarreco.");
+        if(temperatura == 1){
+            var calculo = ((valor - 32)/1.8);
+            alert("Celsius"+calculo.toFixed(0))
         }else{
-            document.write("Opção não encontrada.");
+            var calculo = ((valor * 1.8)+32);
+            alert("Fahrenheit "+calculo.toFixed(0))
         }
 
     </script>
