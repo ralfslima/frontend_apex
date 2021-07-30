@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        // Contadores
+        var leticia=0, jean=0, larissa=0, cleber=0
+
+        // Menu
+        var menu = "VOTAÇÃO - 2021\n"
+            menu += "1) Letícia\n"
+            menu += "2) Jean\n"
+            menu += "3) Larissa\n"
+            menu += "4) Cleber\n"
+            menu += "5) Finalizar"
+
+        // Opção
+        var opcao
+
+        // Laço
+        do{
+            
+            opcao = parseInt(prompt(menu))
+
+            switch(opcao){
+                case 1:
+                leticia++
+                break
+
+                case 2:
+                jean++
+                break
+
+                case 3:
+                larissa++
+                break
+
+                case 4:
+                cleber++
+                break
+
+                case 5:
+                alert("Votação finalizada")
+                break;
+
+                default:
+                alert("Opção inválida, tente novamente!")
+            }
+
+        }while(opcao != 5)
+
+        // Exibir quantidade de votos
+        document.write("<h1>Votação</h1>")
+        document.write("Letícia obteve "+cand1+" votos.<br>")
+        document.write("Jean obteve "+cand2+" votos.<br>")
+        document.write("Larissa obteve "+cand3+" votos.")
+        document.write("Cleber obteve "+cand4+" votos.")
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
