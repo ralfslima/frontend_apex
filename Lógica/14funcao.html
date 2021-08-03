@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        // Somar
+        function somar(){
+            var n1 = parseInt(document.getElementById("numero1").value)
+            var n2 = parseInt(document.getElementById("numero2").value)
+
+            var calculo = n1 + n2
+
+            document.getElementById("resultado").innerText = "A soma dos valores é "+calculo
+        }
+
+        // Subtrair
+        function subtrair(){
+            var n1 = parseInt(document.getElementById("numero1").value)
+            var n2 = parseInt(document.getElementById("numero2").value)
+
+            var calculo = n1 - n2
+
+            document.getElementById("resultado").innerText = "A subtração dos valores é "+calculo
+        }
+
+        // Multiplicar
+        function multiplicar(){
+            var n1 = parseInt(document.getElementById("numero1").value)
+            var n2 = parseInt(document.getElementById("numero2").value)
+
+            var calculo = n1 * n2
+
+            document.getElementById("resultado").innerText = "A muliplicação dos valores é "+calculo
+        }
+
+        // Dividir
+        function dividir(){
+            var n1 = parseInt(document.getElementById("numero1").value)
+            var n2 = parseInt(document.getElementById("numero2").value)
+
+            var calculo = n1 / n2
+
+            document.getElementById("resultado").innerText = "A divisão dos valores é "+calculo
+        }
+
+    </script>
+
+</head>
+<body>
+    
+    <input type="number" id="numero1" placeholder="Informe um número">
+    <input type="number" id="numero2" placeholder="Informe outro número">
+    <button onclick="somar()">Somar</button>
+    <button onclick="subtrair()">Subtrair</button>
+    <button onclick="multiplicar()">Multiplicar</button>
+    <button onclick="dividir()">Dividir</button>
+
+    <h1 id="resultado"></h1>
+
+</body>
+</html>
