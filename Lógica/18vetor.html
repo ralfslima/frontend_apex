@@ -8,19 +8,20 @@
 
     <script>
 
-        // Obter o número
-        var numero = prompt("Informe um número")
+        // Vetor
+        var cores = []
 
-        // Tabuada
-        var indice = 0
+        // Laço - Obter cores
+        for(var i=0; i<3; i++){
+            cores.push(prompt("Informe a "+(i+1)+"ª cor"))
+        }
 
-        do{
-            document.write(numero + " X " + indice + " = " + (indice * numero) + "<br>")
-            indice++
-        }while(indice < 11)
+        // Laço - Exibir cores
+        for(var i=0; i<3; i++){
+            document.write(cores[i]+"<br>")
+        }
 
     </script>
-
 </head>
 <body>
     

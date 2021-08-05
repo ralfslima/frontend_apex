@@ -8,22 +8,16 @@
 
     <script>
 
-        // Obter um número
-        var numero = parseInt(prompt(("Informe um número")))
+        var cores = ["amarelo","verde","vermelho","azul","roxo"]
 
-        // Menor
-        var menor = numero - 10
+        document.write("A quantidade de cores é "+cores.length+"<hr>")
 
-        // Maior
-        var maior = numero + 10
-
-        // Laço
-        while(menor <= maior){
-            document.write(menor + " ")
-            menor++
+        for(var indice=0; indice<cores.length; indice++){
+            document.write(cores[indice]+"<br>")
         }
 
     </script>
+
 </head>
 <body>
     

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        // Vetores
+        var nomes  = []
+        var idades = []
+
+        // Função cadastrar
+        function cadastrar(){
+
+            // Obter o nome e a idade
+            var nome  = document.getElementById("nome").value
+            var idade = document.getElementById("idade").value
+
+            // Cadastrar nome e idade nos vetores
+            nomes.push(nome)
+            idades.push(idade)
+
+            // Listagem
+            var lista = "Lista de contatos<hr>"
+            for(var indice=0; indice<nomes.length; indice++){
+                lista += nomes[indice] + " - " + idades[indice] + "<br>"
+            }
+            document.getElementById("lista").innerHTML = lista
+
+        }
+
+    </script>
+
+</head>
+<body>
+    
+    <input type="text"   id="nome"  placeholder="Informe seu nome">
+    <input type="number" id="idade" placeholder="Informe sua idade">
+    <button onclick="cadastrar()">Cadastrar</button>
+
+    <p id="lista"></p>
+
+</body>
+</html>
